@@ -1,0 +1,7 @@
+I recommend using Karate for functional testing because it is a simple and expressive language that is easy to learn and use. Karate also has a number of features that make it well-suited for functional testing, such as:
+
+Support for multiple protocols, including HTTP, HTTPS, and JMS
+Support for data-driven testing
+Support for parallel testing
+A built-in reporting system
+Overall, Karate is a powerful and versatile tool for functional testing.

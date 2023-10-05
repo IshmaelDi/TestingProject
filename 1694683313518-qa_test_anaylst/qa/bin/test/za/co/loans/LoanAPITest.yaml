@@ -1,0 +1,33 @@
+# feature: Loan API test
+
+scenario: Test successful loan application
+  given
+    def loanApplicationRequest = {
+      idNumber: "8001010101010",
+      dateOfBirth: "1980-01-01",
+      name: "John Doe",
+      surname: "Smith",
+      bank: "Scrum Bank",
+      bankAccountNumber: "1234567890"
+    }
+  when
+    post "http://localhost:8080/loan" with loanApplicationRequest
+  then
+    status 200
+    body message == "Loan application successful"
+
+scenario: Test failed loan application invalid ID number
+  given
+    def loanApplicationRequest = {
+      idNumber: "7810047112094",
+      dateOfBirth: "1978-10-04",
+      name: "Direro Ishmael",
+      surname: "Green",
+      bank: "Yaml Bank",
+      bankAccountNumber: "1524967190"
+    }
+  when
+    post "http://localhost:8080/loan" with loanApplicationRequest
+  then
+    status 500
+    body message == "Invalid ID number"
