@@ -19,7 +19,7 @@ scenario: Test successful loan application
 scenario: Test failed loan application invalid ID number
   given
     def loanApplicationRequest = {
-      idNumber: "78100471120940",
+      idNumber: "781004711209213",
       dateOfBirth: "1978-10-04",
       name: "Direro Ishmael",
       surname: "Green",
