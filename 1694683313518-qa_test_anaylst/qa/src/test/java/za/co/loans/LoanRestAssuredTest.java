@@ -16,7 +16,7 @@ public class LoanRestAssuredTest {
         loanApplicationRequest.setDateOfBirth("1998-10-05");
         loanApplicationRequest.setName("Ishmael Direro");
         loanApplicationRequest.setName("Green");
-        loanApplicationRequest.setBank("Test Bank");
+        loanApplicationRequest.setBank("Scrum Bank");
         loanApplicationRequest.setBankAccountNumber("153455780");
 
         // Send the loan application request to the REST API
@@ -36,12 +36,12 @@ public class LoanRestAssuredTest {
     public void testFailedLoanApplicationInvalidIDNumber() {
         // Create a new loan application request with an invalid ID number
         LoanApplicationRequest loanApplicationRequest = new LoanApplicationRequest();
-        loanApplicationRequest.setIdNumber("1234567890");
-        loanApplicationRequest.setDateOfBirth("1980-01-01");
-        loanApplicationRequest.setName("John Doe");
+        loanApplicationRequest.setIdNumber("19360128919");
+        loanApplicationRequest.setDateOfBirth("1936-01-28");
+        loanApplicationRequest.setName("John");
         loanApplicationRequest.setName("Smith");
         loanApplicationRequest.setBank("Scrum Bank");
-        loanApplicationRequest.setBankAccountNumber("1234567890");
+        loanApplicationRequest.setBankAccountNumber("1931197892");
 
         // Send the loan application request to the REST API
         Response response = given()
