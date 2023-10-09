@@ -3,12 +3,12 @@
 scenario: Test successful loan application
   given
     def loanApplicationRequest = {
-      idNumber: "8001010101010",
-      dateOfBirth: "1980-01-01",
-      name: "John Doe",
-      surname: "Smith",
+      idNumber: "7810086124042",
+      dateOfBirth: "1978-10-08",
+      name: "Ishmae Di",
+      surname: "Direro",
       bank: "Scrum Bank",
-      bankAccountNumber: "1234567890"
+      bankAccountNumber: "1931527891"
     }
   when
     post "http://localhost:8080/loan" with loanApplicationRequest
@@ -19,7 +19,7 @@ scenario: Test successful loan application
 scenario: Test failed loan application invalid ID number
   given
     def loanApplicationRequest = {
-      idNumber: "7810047112094",
+      idNumber: "78100471120940",
       dateOfBirth: "1978-10-04",
       name: "Direro Ishmael",
       surname: "Green",
