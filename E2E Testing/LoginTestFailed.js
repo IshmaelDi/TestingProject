@@ -1,8 +1,11 @@
 // using TestCafe framework
+
 Feature('Login')
 
 Scenario('Failed Login', async ({ I }) => {
+  
   // Go to the login page
+  
   await I.amOnPage('https://etalente.co.za/login');
 
   // Enter the incorrect username and password
