@@ -1,6 +1,7 @@
 // using CodeceptJS framework
 
 test('Failed Login', async t => {
+    
     // Go to the login page
     await t.navigateTo('https://etalente.co.za/login');
   
